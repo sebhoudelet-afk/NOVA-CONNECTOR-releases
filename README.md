@@ -23,6 +23,21 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
 
+## Nouveautés de la 0.2.3 : l'exploration par-dessus le jeu
+
+Deux surimpressions transparentes, qui laissent passer les clics, à placer où tu veux. Elles se règlent dans *Paramètres → Surimpression en jeu (exploration)*, avec le jeu en mode **fenêtré sans bordure**.
+
+<table>
+  <tr>
+    <td width="40%" valign="top"><img src="captures/0.2.3/surimpression-exploration.png" alt="Panneaux d'exploration en surimpression"></td>
+    <td width="60%" valign="top"><img src="captures/0.2.3/surimpression-systeme.png" alt="Tableau du système en surimpression"></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub><b>Panneaux d'exploration</b> : à l'arrivée, la valeur du système et les astres qui valent le détour ; pendant l'échantillonnage, la distance aux échantillons précédents en direct ; la route et l'alerte carburant.</sub></td>
+    <td valign="top"><sub><b>Tableau du système</b> : le système actuel comme sur la page Exploration, en permanence et à jour à chaque scan, dans sa propre fenêtre.</sub></td>
+  </tr>
+</table>
+
 ## Nouveautés de la 0.2.2
 
 ### Où acheter un module ou un vaisseau
@@ -111,7 +126,7 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 |---|---|
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
 | **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
-| **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh |
+| **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh, surimpressions en jeu |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
 | **Activités** | Missions, colonisation, objectifs communautaires, Powerplay, permis, porte-vaisseau |
@@ -134,6 +149,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard and carrier data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.3**: in-game overlays for exploration (arrival in a system, sampling distance, route and fuel) and a second overlay with the current system's table.
 
 **New in 0.2.2**: where to buy a module or a ship near you (Ctrl+K or the ship builder, with size, rating and mount), a welcome assistant on first launch, a diagnostic report for bug reports, the game's French names, and each version's source code attached to its release.
 
