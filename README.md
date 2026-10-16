@@ -102,7 +102,7 @@ Interface en français et en anglais.
 
 Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper) et d'[EliteMining](https://github.com/Viper-Dude/EliteMining).
 
-Licence GPL-3.0 ou ultérieure. Elite Dangerous est une marque de Frontier Developments plc ; Nova Connector n'est pas affilié à Frontier Developments.
+Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à sa page de [téléchargement](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases) (`nova-connector-X.Y.Z-sources.zip`). Elite Dangerous est une marque de Frontier Developments plc ; Nova Connector n'est pas affilié à Frontier Developments.
 
 ---
 
