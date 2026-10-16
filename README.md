@@ -23,14 +23,14 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
 
-## Nouveautés de la 0.2.3 : l'exploration par-dessus le jeu
+## Nouveautés des 0.2.3 et 0.2.4 : l'exploration par-dessus le jeu
 
-Deux surimpressions transparentes, qui laissent passer les clics, à placer où tu veux. Elles se règlent dans *Paramètres → Surimpression en jeu (exploration)*, avec le jeu en mode **fenêtré sans bordure**.
+Deux surimpressions qui laissent passer les clics, à placer où tu veux. Depuis la 0.2.4, leur fond est transparent : seuls le texte et les icônes s'affichent, détourés en noir pour rester lisibles, et l'opacité du fond se règle de 0 à 100 %. Elles se règlent dans *Paramètres → Surimpression en jeu (exploration)*, avec le jeu en mode **fenêtré sans bordure**.
 
 <table>
   <tr>
-    <td width="40%" valign="top"><img src="captures/0.2.3/surimpression-exploration.png" alt="Panneaux d'exploration en surimpression"></td>
-    <td width="60%" valign="top"><img src="captures/0.2.3/surimpression-systeme.png" alt="Tableau du système en surimpression"></td>
+    <td width="40%" valign="top"><img src="captures/0.2.4/panneaux-transparents.png" alt="Panneaux d'exploration en surimpression, fond transparent"></td>
+    <td width="60%" valign="top"><img src="captures/0.2.4/tableau-transparent.png" alt="Tableau du système en surimpression, fond transparent"></td>
   </tr>
   <tr>
     <td valign="top"><sub><b>Panneaux d'exploration</b> : à l'arrivée, la valeur du système et les astres qui valent le détour ; pendant l'échantillonnage, la distance aux échantillons précédents en direct ; la route et l'alerte carburant.</sub></td>
@@ -149,6 +149,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard and carrier data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.4**: transparent overlays (only the outlined text shows over the game), with the background's opacity to set.
 
 **New in 0.2.3**: in-game overlays for exploration (arrival in a system, sampling distance, route and fuel) and a second overlay with the current system's table.
 
