@@ -18,10 +18,31 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 
 1. Ouvre la [dernière version](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest) et télécharge **`Nova.Connector_x.y.z_x64-setup.exe`**.
 2. Lance l'installateur. Il n'est pas encore signé : Windows SmartScreen affiche un avertissement, clique sur **Informations complémentaires** puis **Exécuter quand même**.
-3. Lance Nova Connector : il lit le journal du jeu tout seul, en direct et depuis ton historique.
+3. Lance Nova Connector : un assistant t'aide à le régler en quelques écrans, puis il lit le journal du jeu tout seul, en direct et depuis ton historique.
 4. Facultatif, pour le marché, le chantier naval et le stock de ton porte-vaisseau : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.2
+
+### Où acheter un module ou un vaisseau
+
+**Ctrl+K**, puis le nom d'un module ou d'un vaisseau : les stations les plus proches qui le vendent, avec le prix, la plateforme et la date du relevé. Pour un module, tu choisis la taille, la classe et la monture ; le réacteur FSD normal et le FSD à survoltage (SSN) sont bien distingués. Dans le constructeur de vaisseau, un bouton à côté de chaque module et de la coque ouvre directement la bonne recherche. Elle part de ta position, même dans un système que Spansh ne connaît pas encore.
+
+<img src="captures/0.2.2/ou-acheter-module.png" alt="Où acheter un réacteur FSD 5A" width="100%">
+
+### Un assistant au premier lancement
+
+La langue, le journal du jeu, le partage avec EDDN, EDSM et Inara, la connexion à Frontier : tout se règle en cinq écrans. Il se rouvre depuis *Paramètres → Aide et diagnostic*.
+
+<img src="captures/0.2.2/assistant.png" alt="Assistant de démarrage" width="100%">
+
+### Et aussi
+
+- **Aide et diagnostic** (Paramètres) : un rapport à coller quand tu [signales un problème](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/issues/new?template=bug.yml), sans tes clés API, ton nom de commandant ni ton identifiant Frontier.
+- **Noms français du jeu** pour des marchandises, des matériaux et des modules mal traduits ou pas traduits ; rangs de mercenaire, d'exobiologiste et de CQC en français.
+- Cases à cocher, curseurs et listes au style de l'interface ; surimpression en jeu aux coins coupés.
+- Le code source de chaque version est joint à sa page de téléchargement.
 
 ## Nouveautés de la 0.2.0
 
@@ -95,6 +116,7 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
 | **Activités** | Missions, colonisation, objectifs communautaires, Powerplay, permis, porte-vaisseau |
 | **Gains et commerce** | Crédits par activité et par session, bénéfice du commerce, itinéraires Spansh |
+| **Où acheter** | Marchandises, modules et vaisseaux : les stations les plus proches de toi ou d'un chantier |
 
 Interface en français et en anglais.
 
@@ -112,6 +134,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard and carrier data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.2**: where to buy a module or a ship near you (Ctrl+K or the ship builder, with size, rating and mount), a welcome assistant on first launch, a diagnostic report for bug reports, the game's French names, and each version's source code attached to its release.
 
 **New in 0.2.0**: a new interface; colonisation shopping lists (where to buy each resource, fewest stops, carrier cargo deducted, delivery pace); fleet carrier upkeep and estimated balance; earnings and trade pages; Spansh routes plotted in the app with the next system copied on arrival; quick search (Ctrl+K); missions and massacre stacks; Windows notifications.
 
