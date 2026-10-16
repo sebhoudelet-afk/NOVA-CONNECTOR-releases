@@ -1,0 +1,24 @@
+name: Signaler un problème / Report a problem
+description: Quelque chose ne marche pas dans Nova Connector / Something doesn't work in Nova Connector
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Que se passe-t-il ? / What happens?
+      description: Ce que tu faisais, ce que tu attendais, ce qui s'est passé. / What you were doing, what you expected, what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Rapport de diagnostic / Diagnostic report
+      description: >-
+        Dans Nova Connector : Paramètres → Aide et diagnostic → « Copier le rapport de diagnostic », puis colle-le ici.
+        Tes clés API, tes noms de commandant et ton identifiant Frontier en sont retirés.
+        / In Nova Connector: Settings → Help and diagnostics → "Copy the diagnostic report", then paste it here.
+      render: text
+  - type: textarea
+    id: more
+    attributes:
+      label: Captures ou autres détails / Screenshots or other details
