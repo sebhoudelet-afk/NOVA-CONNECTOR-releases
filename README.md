@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere.png" alt="Nova Connector 0.2.1 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere.png" alt="Nova Connector 0.2.4 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
