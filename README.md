@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.4.png" alt="Nova Connector 0.2.4 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.5.png" alt="Nova Connector 0.2.5 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,10 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval et le stock de ton porte-vaisseau : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Correctif de la 0.2.5 : plus de fausse alerte « hors de portée »
+
+La surimpression d'exploration pouvait annoncer qu'un saut de la route était hors de portée du FSD alors qu'il passait. Le calcul a été vérifié sur plus de 6 000 sauts réels : il suit maintenant tout de suite une amélioration du FSD chez un ingénieur, compte le boost d'une étoile à neutrons, d'une naine blanche ou d'une injection FSD, et donne le carburant consommé avec un booster FSD gardien à 0,02 % près (il était sous-estimé, parfois de plus de moitié).
 
 ## Nouveautés des 0.2.3 et 0.2.4 : l'exploration par-dessus le jeu
 
@@ -149,6 +153,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard and carrier data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**Fixed in 0.2.5**: no more false "out of the FSD's range" alerts on the route (engineer upgrades, neutron/white dwarf boosts and FSD injection taken into account), and the right fuel figures with a guardian FSD booster.
 
 **New in 0.2.4**: transparent overlays (only the outlined text shows over the game), with the background's opacity to set.
 
