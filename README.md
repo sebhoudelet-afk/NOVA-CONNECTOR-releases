@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.6.png" alt="Nova Connector 0.2.6 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.7.png" alt="Nova Connector 0.2.7 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,33 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.7
+
+### Le marché de ton porte-vaisseau
+
+<table>
+  <tr>
+    <td width="45%" valign="top"><img src="captures/0.2.7/marche-porte-vaisseau.png" alt="Marché du porte-vaisseau"></td>
+    <td width="55%" valign="top">Dans <i>Activités → Porte-vaisseau</i>, la carte <b>Marché</b> liste tes ordres de vente et d'achat, avec les prix et la progression de chaque achat ; la soute donne la valeur de chaque marchandise.<br><br>Tant qu'un ordre d'achat est ouvert et que le jeu tourne, Nova Connector relit le porte-vaisseau toutes les 15 minutes et une <b>notification Windows</b> te prévient quand il est rempli.<br><br>Pour le <b>tritium</b> : ce qu'il faut pour remplir le réservoir ou faire un trajet, ce que ta soute en contient déjà, et où acheter le reste.</td>
+  </tr>
+</table>
+
+### Objectifs communautaires : où acheter, où miner
+
+Chaque objectif donne sa distance depuis ta position. Pour un objectif de commerce ou de minage, **Où acheter** liste les stations qui vendent chaque marchandise autour de l'objectif ou de toi, et **Où miner** ouvre la recherche de points chauds sur le bon minerai autour de l'objectif. Une notification Windows prévient quand un nouvel objectif commence, et quand un objectif auquel tu es inscrit se termine dans la journée.
+
+<img src="captures/0.2.7/objectif-minage.png" alt="Objectif communautaire de minage" width="100%">
+
+### Ton escadron au complet
+
+Avec la connexion à Frontier, la page **Escadron** montre aussi les avantages et les tags de l'escadron, ses membres (rang, vaisseau, dernière connexion, position quand elle n'est pas masquée), le contenu de sa banque et son porte-vaisseau d'escadron.
+
+<img src="captures/0.2.7/escadron-membres.png" alt="Porte-vaisseau d'escadron, banque et membres" width="100%">
+
+### Et aussi
+
+- **Surimpression en jeu** : le compte à rebours du saut du porte-vaisseau, et ta contribution aux objectifs communautaires après chaque livraison (*Paramètres → Surimpression en jeu*).
 
 ## Nouveautés de la 0.2.6
 
@@ -152,12 +179,12 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | Page | Ce qu'on y trouve |
 |---|---|
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
-| **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; tag, membres et allégeance avec la connexion Frontier |
+| **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron |
 | **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
 | **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh, surimpressions en jeu |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
-| **Activités** | Missions, colonisation, objectifs communautaires en cours (même sans inscription), Powerplay, permis, porte-vaisseau et sa soute |
+| **Activités** | Missions, colonisation, objectifs communautaires en cours (même sans inscription, avec où acheter et où miner), Powerplay, permis, porte-vaisseau (soute, marché, tritium) |
 | **Gains et commerce** | Crédits par activité et par session, bénéfice du commerce, itinéraires Spansh |
 | **Où acheter** | Marchandises, modules et vaisseaux : les stations les plus proches de toi ou d'un chantier |
 
@@ -177,6 +204,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.7**: the fleet carrier's market (sell and buy orders, each commodity's value, a notification when a buy order is filled) and its tritium (what the tank or a trip needs, what the hold has, where to buy the rest); community goals with their distance, where to buy and where to mine, and notifications when one starts or one you signed up for ends; the squadron's perks, tags, members, bank and carrier with the Frontier login; overlay panels for the carrier's jump countdown and your community goal contributions.
 
 **New in 0.2.6**: all the running community goals, even without signing up (from Frontier's public list, with your contribution when you signed up); the fleet carrier's hold, commodity by commodity, with how its space is used; a Squadron page (your rank and its changes, squadron bank, leaderboard contributions, and with the Frontier login the tag, active members, founder and allegiance).
 
