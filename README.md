@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.5.png" alt="Nova Connector 0.2.5 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.6.png" alt="Nova Connector 0.2.6 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -19,9 +19,32 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 1. Ouvre la [dernière version](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest) et télécharge **`Nova.Connector_x.y.z_x64-setup.exe`**.
 2. Lance l'installateur. Il n'est pas encore signé : Windows SmartScreen affiche un avertissement, clique sur **Informations complémentaires** puis **Exécuter quand même**.
 3. Lance Nova Connector : un assistant t'aide à le régler en quelques écrans, puis il lit le journal du jeu tout seul, en direct et depuis ton historique.
-4. Facultatif, pour le marché, le chantier naval et le stock de ton porte-vaisseau : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
+4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.6
+
+### Tous les objectifs communautaires en cours, même sans inscription
+
+L'onglet *Activités → Objectifs communautaires* affiche tous les objectifs en cours, d'après la liste publique de Frontier : système et station, échéance, marchandises visées, progression vers l'objectif et présentation complète. Quand tu es inscrit, ta contribution, ton palier et ton classement s'y ajoutent ; sinon, Nova Connector t'indique où t'inscrire.
+
+<img src="captures/0.2.6/objectifs-communautaires.png" alt="Objectifs communautaires en cours" width="100%">
+
+### La soute de ton porte-vaisseau
+
+<table>
+  <tr>
+    <td width="45%" valign="top"><img src="captures/0.2.6/porte-vaisseau-soute.png" alt="Soute du porte-vaisseau"></td>
+    <td width="55%" valign="top">Dans <i>Activités → Porte-vaisseau</i>, la nouvelle carte <b>Soute</b> liste chaque marchandise à bord, avec le total et la valeur de la cargaison. Le relevé vient de l'API Frontier, puis tes transferts et tes achats ou ventes au porte-vaisseau s'y ajoutent d'après le journal.<br><br>Au-dessus, la répartition de l'espace selon le jeu (marchandises, équipage, vaisseaux et modules, libre), visible même sans connexion à Frontier.</td>
+  </tr>
+</table>
+
+### Une page pour ton escadron
+
+Sous *Commandant*, la page **Escadron** réunit ton rang et son évolution, ta part de la banque de l'escadron et tes meilleures contributions aux classements. Avec la connexion à Frontier : le tag, les membres actifs, le fondateur, l'allégeance, la devise et la mission.
+
+<img src="captures/0.2.6/escadron.png" alt="Page Escadron" width="100%">
 
 ## Correctif de la 0.2.5 : plus de fausse alerte « hors de portée »
 
@@ -129,11 +152,12 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | Page | Ce qu'on y trouve |
 |---|---|
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
+| **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; tag, membres et allégeance avec la connexion Frontier |
 | **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
 | **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh, surimpressions en jeu |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
-| **Activités** | Missions, colonisation, objectifs communautaires, Powerplay, permis, porte-vaisseau |
+| **Activités** | Missions, colonisation, objectifs communautaires en cours (même sans inscription), Powerplay, permis, porte-vaisseau et sa soute |
 | **Gains et commerce** | Crédits par activité et par session, bénéfice du commerce, itinéraires Spansh |
 | **Où acheter** | Marchandises, modules et vaisseaux : les stations les plus proches de toi ou d'un chantier |
 
@@ -152,7 +176,9 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
-**Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard and carrier data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+**Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.6**: all the running community goals, even without signing up (from Frontier's public list, with your contribution when you signed up); the fleet carrier's hold, commodity by commodity, with how its space is used; a Squadron page (your rank and its changes, squadron bank, leaderboard contributions, and with the Frontier login the tag, active members, founder and allegiance).
 
 **Fixed in 0.2.5**: no more false "out of the FSD's range" alerts on the route (engineer upgrades, neutron/white dwarf boosts and FSD injection taken into account), and the right fuel figures with a guardian FSD booster.
 
