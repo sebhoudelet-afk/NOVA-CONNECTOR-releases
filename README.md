@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.7.png" alt="Nova Connector 0.2.7 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.8.png" alt="Nova Connector 0.2.8 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,25 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.8
+
+### La route exacte, calculée pour ton vaisseau
+
+<table>
+  <tr>
+    <td width="55%" valign="top"><img src="captures/0.2.8/route-exacte.png" alt="Route exacte vers Colonia"></td>
+    <td width="45%" valign="top">Dans <i>Exploration → Route Spansh</i>, le nouveau calcul <b>Route exacte</b> passe par le calculateur de la galaxie de Spansh avec <b>ton propre vaisseau</b> : le FSD et son ingénierie, les réservoirs, la masse, la cargaison, le booster FSD gardien et le ×6 du FSD SCO Mk II.<br><br>Chaque saut donne le carburant consommé et restant, et la liste signale <b>où faire le plein</b>, les <b>étoiles à neutrons</b> et les <b>injections FSD</b>. Sûr même avec un petit réservoir.</td>
+  </tr>
+</table>
+
+Quatre options : passer par les étoiles à neutrons, FSD déjà suralimenté au départ, utiliser les injections FSD, éviter les étoiles secondaires. Les champs **Départ** et **Arrivée** complètent les noms de systèmes, et **Système connu le plus proche** part du système le plus proche de toi que Spansh connaît, quand il ne connaît pas encore le tien. Ces fonctions reprennent celles d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron), de Numerlor.
+
+<img src="captures/0.2.8/calcul-route-exacte.png" alt="Calcul d'une route exacte" width="100%">
+
+### Et aussi
+
+- **Portée juste pour les vaisseaux allégés par une mise à jour du jeu** (le Mandalay par exemple) : la masse de la coque vient maintenant du jeu. La portée calculée était trop courte de plusieurs années-lumière, et l'alerte carburant de la route restait désactivée pour eux.
 
 ## Nouveautés de la 0.2.7
 
@@ -181,7 +200,7 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
 | **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron |
 | **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
-| **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh, surimpressions en jeu |
+| **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh (dont la route exacte pour ton vaisseau), surimpressions en jeu |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
 | **Activités** | Missions, colonisation, objectifs communautaires en cours (même sans inscription, avec où acheter et où miner), Powerplay, permis, porte-vaisseau (soute, marché, tritium) |
@@ -192,7 +211,7 @@ Interface en français et en anglais.
 
 ## Crédits
 
-Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper) et d'[EliteMining](https://github.com/Viper-Dude/EliteMining).
+Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper), d'[EliteMining](https://github.com/Viper-Dude/EliteMining) et d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron).
 
 Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à sa page de [téléchargement](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases) (`nova-connector-X.Y.Z-sources.zip`). Elite Dangerous est une marque de Frontier Developments plc ; Nova Connector n'est pas affilié à Frontier Developments.
 
@@ -204,6 +223,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.8**: an "Exact route" plotter in the Spansh route tab, from Auto_Neutron: Spansh's galaxy plotter with your own ship (drive and its engineering, tanks, mass, cargo, guardian booster, the SCO Mk II's ×6), each jump with the fuel used and left, refuels, neutron stars and FSD injections; system names completed in the start and destination fields, and the nearest system Spansh knows when it doesn't know yours; the right range for ships a game update made lighter (the Mandalay for one).
 
 **New in 0.2.7**: the fleet carrier's market (sell and buy orders, each commodity's value, a notification when a buy order is filled) and its tritium (what the tank or a trip needs, what the hold has, where to buy the rest); community goals with their distance, where to buy and where to mine, and notifications when one starts or one you signed up for ends; the squadron's perks, tags, members, bank and carrier with the Frontier login; overlay panels for the carrier's jump countdown and your community goal contributions.
 
