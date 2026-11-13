@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.8.png" alt="Nova Connector 0.2.8 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.10.png" alt="Nova Connector 0.2.10 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,41 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.10 : un nouveau logo
+
+Nova Connector a maintenant sa propre icône : un hexagone qui relie trois nœuds autour d'une nova, sur une tuile graphite aux coins coupés, comme les panneaux de l'appli. Elle remplace l'icône par défaut dans la barre des tâches, la zone de notification, le menu Démarrer et l'installateur. Dans le menu de l'appli, le logo prend la couleur du HUD.
+
+<img src="captures/0.2.10/nouveau-logo.png" alt="Le nouveau logo de Nova Connector" width="100%">
+
+## Nouveautés de la 0.2.9 : la page Voyage
+
+La nouvelle page *Voyage* reprend les fonctions de Wayfarer, de CMDR Shadowflame#012, réécrites pour Nova Connector.
+
+### Ta route, saut après saut
+
+<img src="captures/0.2.9/trajet.png" alt="Avancement sur la route vers Colonia et usure du réacteur FSD" width="100%">
+
+L'onglet **Trajet** suit la route Spansh, ou à défaut l'itinéraire tracé dans le jeu : sauts et distance restants, **prochaine étoile écopable**, étoiles à neutrons et pleins prévus. Un système hors de la route est signalé jusqu'à ton retour dessus.
+
+À côté, l'**usure du réacteur FSD** : le jeu ne donne son intégrité qu'au chargement du vaisseau et après une réparation. Entre les deux, Nova Connector la fait baisser à chaque boost de neutron, de ce qu'un boost coûte à ton réacteur, mesuré sur tes journaux. Sous 65 %, il conseille une réparation à l'AFMU.
+
+### Un assistant vocal
+
+<img src="captures/0.2.9/assistant-vocal.png" alt="Réglages de l'assistant vocal et ses phrases" width="100%">
+
+Avec les voix de Windows, un court point à chaque arrivée plutôt qu'une pile d'alertes : système atteint, système suivant, étoile à neutrons, longue section sans carburant. Il signale aussi le carburant bas puis critique, le réservoir plein et le réacteur usé. **Chaque phrase peut être réécrite ou coupée** : les mots entre accolades prennent les valeurs du jeu.
+
+### La couleur de ton HUD
+
+<img src="captures/0.2.9/couleur-hud.png" alt="Nova Connector avec un HUD bleu glace" width="100%">
+
+Dans *Paramètres → Couleur du HUD*, l'appli et ses surimpressions prennent la couleur du HUD de ton jeu, une couleur que tu choisis, ou l'orange d'origine.
+
+### Et aussi
+
+- **Surimpression en jeu** : le compte à rebours jusqu'au plein pendant l'écopage, mesuré sur la jauge ; sur le panneau de route, l'alerte hors route, la prochaine étoile écopable et l'état du réacteur.
+- **Tracé automatique** (expérimental, désactivé par défaut) : à l'arrivée, après un compte à rebours qu'Échap annule, l'appli trace le système suivant dans la carte de la galaxie. Elle attend le boost sur une étoile à neutrons. La carte de la galaxie doit avoir une touche clavier : une manette ne peut pas être simulée.
 
 ## Nouveautés de la 0.2.8
 
@@ -201,6 +236,7 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron |
 | **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
 | **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh (dont la route exacte pour ton vaisseau), surimpressions en jeu |
+| **Voyage** | Avancement sur la route, prochaine étoile écopable, usure du réacteur FSD, assistant vocal, tracé automatique (expérimental) |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
 | **Minage** | Sessions, prospections, rendement, annonces vocales, points chauds, meilleurs prix de vente |
 | **Activités** | Missions, colonisation, objectifs communautaires en cours (même sans inscription, avec où acheter et où miner), Powerplay, permis, porte-vaisseau (soute, marché, tritium) |
@@ -211,7 +247,7 @@ Interface en français et en anglais.
 
 ## Crédits
 
-Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper), d'[EliteMining](https://github.com/Viper-Dude/EliteMining) et d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron).
+Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper), d'[EliteMining](https://github.com/Viper-Dude/EliteMining), d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron) et de Wayfarer (CMDR Shadowflame#012).
 
 Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à sa page de [téléchargement](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases) (`nova-connector-X.Y.Z-sources.zip`). Elite Dangerous est une marque de Frontier Developments plc ; Nova Connector n'est pas affilié à Frontier Developments.
 
