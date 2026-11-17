@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.11.png" alt="Nova Connector 0.2.11 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.12.png" alt="Nova Connector 0.2.12 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,15 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.12 : ton statut Discord
+
+<table>
+  <tr>
+    <td width="55%" valign="top"><img src="captures/0.2.12/statut-discord.png" alt="Réglages du statut Discord"></td>
+    <td width="45%" valign="top">Pendant que tu joues, ton profil Discord affiche <b>« Joue à Elite Dangerous »</b>, avec le logo de Nova Connector et deux lignes qui suivent ta partie :<br><br>• ce que tu fais : amarré à une station, en supercroisière, posé sur une planète, à pied, en SRV… ;<br>• le système et ton vaisseau, avec son nom ;<br>• depuis quand tu joues.<br><br>À activer dans <i>Paramètres → Discord</i> : c'est désactivé par défaut. Le lieu et le vaisseau peuvent être masqués. L'appli Discord doit être ouverte sur le PC.</td>
+  </tr>
+</table>
 
 ## Nouveautés de la 0.2.11 : le BGS et Discord
 
@@ -253,7 +262,7 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 |---|---|
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
 | **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron ; activité BGS par tick, système et faction, avec un rapport à copier ou à envoyer sur Discord |
-| **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier ; annonces sur Discord (saut du porte-vaisseau, chantiers terminés, rapport BGS) |
+| **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier ; statut Discord (ce que tu fais en jeu) et annonces sur Discord (saut du porte-vaisseau, chantiers terminés, rapport BGS) |
 | **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh (dont la route exacte pour ton vaisseau), surimpressions en jeu |
 | **Voyage** | Avancement sur la route, prochaine étoile écopable, usure du réacteur FSD, assistant vocal, tracé automatique (expérimental) |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
@@ -278,6 +287,8 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.12**: a Discord status (Settings → Discord, off by default): while you play, your profile shows "Playing Elite Dangerous" with Nova Connector's logo, what you're doing (docked, in supercruise, landed, on foot, in an SRV…), the system, your ship and since when; the location and the ship can be left out. The Discord app must be running on the PC.
 
 **New in 0.2.11**: BGS activity in the Squadron page, after BGS-Tally: what you do for each faction, system by system, from tick to tick (mission influence and failed missions, bounties, combat bonds, exploration and exobiology data sold, trade, black market, murders; nothing on a carrier), with each faction's influence, states and conflicts, and a report to copy or send to Discord; Discord posts through a channel webhook: your carrier's scheduled jump (then its cancellation or arrival, with the departure in each reader's own time), finished colonisation sites and the BGS report.
 
