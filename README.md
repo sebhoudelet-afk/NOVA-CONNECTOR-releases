@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.10.png" alt="Nova Connector 0.2.10 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.11.png" alt="Nova Connector 0.2.11 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -22,6 +22,25 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Nouveautés de la 0.2.11 : le BGS et Discord
+
+### L'activité BGS de ton escadron
+
+<img src="captures/0.2.11/activite-bgs.png" alt="Activité BGS par système et par faction" width="100%">
+
+Le nouvel onglet *Escadron → Activité BGS* reprend les fonctions de [BGS-Tally](https://github.com/aussig/BGS-Tally). Nova Connector relit tes journaux et compte ce que tu fais pour chaque faction, système par système, d'un tick à l'autre : l'influence des missions et les missions échouées, les primes, les obligations de combat, les données d'exploration et d'exobiologie vendues, le bénéfice du commerce (minerais compris), les achats, le marché noir et les meurtres. Rien n'est compté sur un porte-vaisseau.
+
+Chaque système montre l'influence de ses factions, celle qui le contrôle, leurs états (Essor, Élection, Guerre…) et les conflits en cours avec les jours gagnés. Mets une étoile sur les factions que ton escadron soutient, puis **copie le rapport** ou **envoie-le sur Discord**. Ton activité passée est déjà là : elle est relue dans tes journaux.
+
+### Tes annonces sur Discord
+
+<table>
+  <tr>
+    <td width="55%" valign="top"><img src="captures/0.2.11/discord.png" alt="Réglages Discord"></td>
+    <td width="45%" valign="top">Dans <i>Paramètres → Discord</i>, colle l'adresse d'un webhook de ton salon et clique sur <b>Tester</b>. Tant que Nova Connector tourne, il y publie :<br><br>• le <b>saut programmé de ton porte-vaisseau</b>, avec la destination et l'heure de départ à l'heure de chaque lecteur, puis son annulation ou son arrivée ;<br>• les <b>chantiers de colonisation terminés</b> ;<br>• le <b>rapport BGS</b>, quand tu l'envoies.<br><br>Chaque message ne part qu'une fois, même après un redémarrage.</td>
+  </tr>
+</table>
 
 ## Nouveautés de la 0.2.10 : un nouveau logo
 
@@ -233,8 +252,8 @@ D'où viennent tes crédits, par activité, par semaine et par session de jeu. L
 | Page | Ce qu'on y trouve |
 |---|---|
 | **Tableau de bord** | Commandant, crédits, position, état du vaisseau, rangs, Powerplay, itinéraire tracé |
-| **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron |
-| **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier |
+| **Escadron** | Ton rang et son évolution, banque de l'escadron, contributions aux classements ; avec la connexion Frontier : tag, allégeance, avantages, membres, contenu de la banque, porte-vaisseau d'escadron ; activité BGS par tick, système et faction, avec un rapport à copier ou à envoyer sur Discord |
+| **Partage** | EDDN, EDSM et Inara, avec une file d'attente qui ne perd rien quand un service est injoignable ; API Frontier ; annonces sur Discord (saut du porte-vaisseau, chantiers terminés, rapport BGS) |
 | **Exploration** | Valeur de chaque astre, espèces d'exobiologie prédites, suivi des échantillons, données non vendues, routes Spansh (dont la route exacte pour ton vaisseau), surimpressions en jeu |
 | **Voyage** | Avancement sur la route, prochaine étoile écopable, usure du réacteur FSD, assistant vocal, tracé automatique (expérimental) |
 | **Ingénierie** | Matériaux, ingénieurs de vaisseau et à pied, listes de souhaits, négociants, constructeur de vaisseau |
@@ -247,7 +266,7 @@ Interface en français et en anglais.
 
 ## Crédits
 
-Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk) et [Ardent Insight](https://ardent-insight.com). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper), d'[EliteMining](https://github.com/Viper-Dude/EliteMining), d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron) et de Wayfarer (CMDR Shadowflame#012).
+Nova Connector s'appuie sur les services de la communauté : [EDDN](https://github.com/EDCD/EDDN), [EDSM](https://www.edsm.net), [Inara](https://inara.cz), [Spansh](https://spansh.co.uk), [Ardent Insight](https://ardent-insight.com) et l'horloge des ticks [tick.edcd.io](https://tick.edcd.io). Ses fonctions reprennent et prolongent celles d'[EDMarketConnector](https://github.com/EDCD/EDMarketConnector), d'[OD Explorer](https://github.com/WarmedxMints/OD-Explorer), d'[EDOMH](https://github.com/jixxed/ed-odyssey-materials-helper), d'[EliteMining](https://github.com/Viper-Dude/EliteMining), d'[Auto_Neutron](https://github.com/Numerlor/Auto_Neutron), de [BGS-Tally](https://github.com/aussig/BGS-Tally) et de Wayfarer (CMDR Shadowflame#012).
 
 Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à sa page de [téléchargement](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases) (`nova-connector-X.Y.Z-sources.zip`). Elite Dangerous est une marque de Frontier Developments plc ; Nova Connector n'est pas affilié à Frontier Developments.
 
@@ -259,6 +278,12 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
 **Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+
+**New in 0.2.11**: BGS activity in the Squadron page, after BGS-Tally: what you do for each faction, system by system, from tick to tick (mission influence and failed missions, bounties, combat bonds, exploration and exobiology data sold, trade, black market, murders; nothing on a carrier), with each faction's influence, states and conflicts, and a report to copy or send to Discord; Discord posts through a channel webhook: your carrier's scheduled jump (then its cancellation or arrival, with the departure in each reader's own time), finished colonisation sites and the BGS report.
+
+**New in 0.2.10**: a logo of its own, a hexagon linking three nodes around a nova, in the taskbar, the Start menu, the installer and the app's menu (in the HUD colour).
+
+**New in 0.2.9**: a Travel page, after Wayfarer by CMDR Shadowflame#012: progress along the Spansh or in-game route, the next scoopable star, neutron stars and refuels, the drive's wear from neutron boosts; a voice assistant with the Windows voices, every line rewritable; the app and its overlays in your HUD colour; an experimental auto-plot of the next system.
 
 **New in 0.2.8**: an "Exact route" plotter in the Spansh route tab, from Auto_Neutron: Spansh's galaxy plotter with your own ship (drive and its engineering, tanks, mass, cargo, guardian booster, the SCO Mk II's ×6), each jump with the fuel used and left, refuels, neutron stars and FSD injections; system names completed in the start and destination fields, and the nearest system Spansh knows when it doesn't know yours; the right range for ships a game update made lighter (the Mandalay for one).
 
