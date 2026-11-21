@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.12.png" alt="Nova Connector 0.2.12 : nouvelle version" width="100%"></a>
+<a href="https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest"><img src="captures/banniere-0.2.13.png" alt="Nova Connector 0.2.13 : nouvelle version" width="100%"></a>
 
 # Nova Connector
 
@@ -19,9 +19,13 @@ et des outils pour l'exploration, l'ingénierie, le minage, le commerce, la colo
 1. Ouvre la [dernière version](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest) et télécharge **`Nova.Connector_x.y.z_x64-setup.exe`**.
 2. Lance l'installateur. Il n'est pas encore signé : Windows SmartScreen affiche un avertissement, clique sur **Informations complémentaires** puis **Exécuter quand même**.
 3. Lance Nova Connector : un assistant t'aide à le régler en quelques écrans, puis il lit le journal du jeu tout seul, en direct et depuis ton historique.
-4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer.
+4. Facultatif, pour le marché, le chantier naval, le stock de ton porte-vaisseau et les infos de ton escadron : page **Station → Se connecter avec Frontier**, une seule fois, avec ton compte Frontier, Steam ou Epic. Rien d'autre à configurer. Si Frontier met fin à la connexion, l'appli te prévient.
 
 Ensuite, les nouvelles versions s'installent d'elles-mêmes : l'appli vérifie les mises à jour au démarrage. Les données de référence (exobiologie, points chauds, ingénierie…) se mettent aussi à jour sans nouvelle version.
+
+## Correctif de la 0.2.13 : la connexion Frontier ne se perd plus en silence
+
+Le tableau de bord affichait l'API Frontier « Désactivé » alors qu'elle était activée, mais sans compte connecté. Il dit maintenant **« Non connecté »**, avec l'endroit où se connecter. Et quand Frontier met fin à la connexion de Nova Connector (ça arrive de temps en temps), l'appli le signale **en orange** sur le tableau de bord et par une **notification Windows**, au lieu de l'effacer sans rien dire. Dans les deux cas : *Station → Se connecter avec Frontier*.
 
 ## Nouveautés de la 0.2.12 : ton statut Discord
 
@@ -286,7 +290,9 @@ Licence GPL-3.0 ou ultérieure : le code source de chaque version est joint à s
 
 **Nova Connector** is a companion app for Elite Dangerous: your game journal live, your data shared with EDDN, EDSM and Inara, and tools for exploration, engineering, mining, trade, colonisation and your fleet carrier. The interface is available in English (Settings).
 
-**Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up.
+**Install**: download `Nova.Connector_x.y.z_x64-setup.exe` from the [latest release](https://github.com/sebhoudelet-afk/NOVA-CONNECTOR-releases/releases/latest). The installer isn't signed yet, so Windows SmartScreen warns on first launch ("More info", then "Run anyway"). Later versions install themselves. For market, shipyard, carrier and squadron data, log in once from **Station → Log in with Frontier**: nothing else to set up (the app tells you if Frontier ends the login).
+
+**Fixed in 0.2.13**: the dashboard no longer shows the Frontier API as "Disabled" when it's on but not logged in: it says "Not logged in", with where to log in. When Frontier ends Nova Connector's login, the app says so in orange on the dashboard and with a Windows notification instead of dropping it silently.
 
 **New in 0.2.12**: a Discord status (Settings → Discord, off by default): while you play, your profile shows "Playing Elite Dangerous" with Nova Connector's logo, what you're doing (docked, in supercruise, landed, on foot, in an SRV…), the system, your ship and since when; the location and the ship can be left out. The Discord app must be running on the PC.
 
